@@ -1,7 +1,6 @@
 from warm.models import District, Coordinates
 import requests
-
-api_key = "cb5e0ced-1c75-471b-be53-f084b08c1f25"  # Уникальный API key яндекс
+from secret import api_key
 
 
 def district_finder():

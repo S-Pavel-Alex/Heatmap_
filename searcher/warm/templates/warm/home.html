@@ -1,0 +1,9 @@
+<title>{{title}}</title>
+<body>
+    <ul>
+        {% for city in cities %}
+        <li><a href="heatmap/{{city}}">Heatmap {{city}}</a></li>
+        <li><a href="histogram/{{city}}">Histogram {{city}}</a></li>
+        {% endfor %}
+    </ul>
+</body>

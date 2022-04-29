@@ -1,7 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from services.create_heatmap_layers import create_heatmap_layers
+from services.created_table_city import INFO_CITY 
 
 from warm.models import *
+
+def home(request):
+    return render(request, 'warm/home.html', {'cities': INFO_CITY.keys, 'title': 'Home page'})
 
 
 def heatmap(request, slug: str):

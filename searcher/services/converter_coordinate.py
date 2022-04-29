@@ -1,8 +1,7 @@
 from warm.models import Address, Coordinates
 from yandex_geocoder import Client, exceptions
+from secret import api_key
 
-api_key = "cb5e0ced-1c75-471b-be53-f084b08c1f25"  # Уникальный ключ яндекс
-# разработчика, получается на сайте
 client = Client(api_key=api_key)  # API yandex объект для конвертации
 
 
